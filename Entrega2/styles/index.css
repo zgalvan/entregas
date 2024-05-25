@@ -6,9 +6,12 @@
     /* hace referencia a archivo html archivo raiz*/
     /*Paleta de colores*/
 
-    --colorFondo: #e7dfd8;
-    --colorCuadro1: #000000;
-    --colorText: #231f20;
+    /* --colorFondo: #e7dfd8; #36C9C6; */
+    
+    --colorFondo: #F5F5F5;
+    --colorEnfasis: #36C9C6;
+    --colorCuadro1: #9BC1BC;
+    --colorText: #231f20de;
 
     /* Fuentes */
     --textTitle: "Lato", sans-serif;
@@ -21,22 +24,20 @@
 }
 
 body {
-    background-color: #e7dfd8;
-    /*Colocando la variable var(var(--colorFondo) no toma el color*/
+    
+    background-color: #F5F5F5;
     width: 100vw;
     height: auto;
-    /*Overflow-> sirve para definir que pasa con el contenido que sobresale del contenedor*/
     overflow-x: hidden;
     box-sizing: border-box;
-
 }
 
-/*  -----------  HEADER  ----------- es un contenedor padre donde se deben determinar las dimensiones de los espacios */
+/*  -----------  HEADER  ----------- */
 
 header {
-    margin-top: 80px;
-    width: 99vw;
-    height: auto;
+    background-color: #36C9C6;
+    width: 100vw;
+    height: 15vh;
 }
 
 .menuNav {
@@ -51,57 +52,63 @@ header {
 
 .home {
 
-    margin-left: 150px;
+    margin-left: 100px;
     font-size: 70px;
     align-items: center;
     display: flex;
     justify-content: left;
+    align-items: center;
+    text-shadow: 1px 1px #3b3b3b;
 
 }
+/* .home a: hover {
+    color: darkcyan;
+} */
 
 .listaMenu {
-
     display: flex;
     justify-content: flex-end;
     margin-right: 70px;
-    gap: 30%;
+    gap: 50px;
     list-style: none;
-
-
+    color: whitesmoke;
+    text-shadow: 1px 1px #3b3b3b;
 }
 
 .listaMenu a {
     text-decoration: none;
     color: var(--colorTexto);
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-}
+    }
 
 .listaMenu a:hover {
-    color: brown;
+    color: darkcyan;
 }
 
 /* --------------  MAIN  --------------  */
 
 main {
-
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 /*Sección 1*/
 .seccion1 {
     margin-top: 80px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    background-color: #9BC1BC;;
     width: 90%;
-    height: auto;
+    height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-content: center; 
+    color: whitesmoke;
+    text-shadow: 1px 1px #3b3b3b;
 }
 
 
@@ -111,7 +118,6 @@ main {
     margin-left: 70px;
     font-size: 70px;
     text-align: center;
-
 }
 
 .titulo2 {
@@ -129,7 +135,7 @@ main {
     text-align: center;
     width: 600px;
     height: 397px;
-    margin-left: 90px;
+  
 }
 
 /*Sección 2*/
@@ -152,15 +158,14 @@ main {
     height: 100%;
     margin-top: 70px;
     margin-left: 45px;
-
+    color: #2e2d2d;
 }
 
 .softSkills {
-
     font-size: 50px;
     text-align: center;
     line-height: 40px;
-    text-align: center;
+    text-align: center;   
 }
 
 .skillDescription {
@@ -193,6 +198,7 @@ main {
     margin-bottom: 50px;
     font-size: 50px;
     text-align: center;
+    color: #2e2d2d;
 
 }
 
@@ -231,9 +237,9 @@ main {
 
 footer {
     margin-top: 70px;
-    margin-left: 90px;
-    border: 1px solid black;
-    width: 90%;
+
+    background-color: #36C9C6;
+    width: 100%;
     height: 7vh;
     display: flex;
     justify-content: flex-end;
@@ -244,16 +250,20 @@ footer {
 .contact {
     font-size: 30px;
     font-weight: lighter;
+    color: whitesmoke;
+    text-shadow: 1px 1px #3b3b3b;
+
 }
 
 .redesSociales {
     font-size: 30px;
     align-items: right;
     margin-right: 50px;
+    text-shadow: 1px 1px #3b3b3b;
 }
 
 i {
-    color: black;
+    color:whitesmoke;
 }
 
 /* Responsive */
@@ -261,10 +271,13 @@ i {
 @media screen and (max-width:490px) and (min-width:390px) {
     header {
         width: 100%;
+        height: auto;
+        background-color: #36C9C6;
     }
 
     .menuNav {
         width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -285,11 +298,14 @@ i {
     }
 
     .listaMenu {
+        margin-top: 30px;
+        margin-bottom: 30px;
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        line-height: 5px;
+
     }
 
     main {
@@ -305,7 +321,6 @@ i {
     }
 
     .titulos {
-
         width: 100%;
         display: flex;
         flex-direction: column;
