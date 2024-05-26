@@ -25,7 +25,7 @@
 
 body {
 
-    background-color: #F5F5F5;
+    background-color: #e7dfd8;
     width: 100vw;
     height: auto;
     overflow-x: hidden;
@@ -35,7 +35,7 @@ body {
 /*  -----------  HEADER  ----------- */
 
 header {
-    background-color: #36C9C6;
+    background-color: #e7dfd8;
     width: 100vw;
     height: 15vh;
 }
@@ -46,14 +46,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .home {
 
     margin-left: 100px;
-    font-size: 70px;
+    font-size: 60px;
     align-items: center;
     display: flex;
     justify-content: left;
@@ -70,7 +68,7 @@ header {
     margin-right: 70px;
     gap: 50px;
     list-style: none;
-    color: whitesmoke;
+    color: #231f20;
     /* text-shadow: 1px 1px #3b3b3b; */
 }
 
@@ -82,8 +80,19 @@ header {
 }
 
 .listaMenu a:hover {
-    color: darkcyan;
+    color: rgb(148, 103, 18);
+    transform: .5s;
 }
+
+/* .menuRes {
+    font-size: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.check {
+    display: none;
+} */
 
 /* --------------  MAIN  --------------  */
 
@@ -94,19 +103,20 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #e7dfd8;
 }
 
 /*Sección 1*/
 .seccion1 {
     margin-top: 80px;
-    /* border: 2px solid black; */
-    background-color: #9BC1BC;
+    border: solid #231f20;
+    background-color: #e7dfd8;
     width: 90%;
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
-    color: whitesmoke;
+    color: #231f20;
     text-shadow: 1px 1px #3b3b3b;
 }
 
@@ -117,7 +127,7 @@ main {
     margin-left: 70px;
     font-size: 70px;
     text-align: center;
-    
+
 }
 
 .titulo2 {
@@ -192,12 +202,10 @@ main {
     font-size: 50px;
     text-align: center;
     color: #2e2d2d;
-
 }
 
 
 .projects {
-    border: solid   red;
     width: 100%;
     height: 100%;
     display: flex;
@@ -216,7 +224,6 @@ main {
 
     to {
         transform: translate(-6%);
-
     }
 }
 
@@ -229,18 +236,21 @@ main {
 
 footer {
     margin-top: 70px;
-    background-color: #36C9C6;
-    width: 100%;
+    border: solid #231f20;
+    background-color: #e7dfd8;
+    width: 90%;
     height: 7vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .contact {
     font-size: 30px;
     font-weight: lighter;
-    color: whitesmoke;
+    color: #231f20;
     align-items: center;
 }
 
@@ -249,7 +259,7 @@ footer {
 }
 
 i {
-    color: whitesmoke;
+    color: #231f20;
 }
 
 /* Responsive */
@@ -258,10 +268,11 @@ i {
     header {
         width: 100%;
         height: auto;
-        background-color: #36C9C6;
+        background-color: #e7dfd8;
     }
 
     .menuNav {
+
         width: 100%;
         height: auto;
         display: flex;
@@ -283,6 +294,7 @@ i {
 
     }
 
+
     .listaMenu {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -291,7 +303,6 @@ i {
         display: flex;
         flex-direction: column;
         line-height: 5px;
-
     }
 
     main {
@@ -299,8 +310,8 @@ i {
     }
 
     .seccion1 {
+        width: 90%;
         display: flex;
-        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -341,16 +352,18 @@ i {
         margin-top: 20px;
     }
 
-    .softSkills{
-        margin-top: 20px;  
+    .softSkills {
+        margin-top: 20px;
     }
-    .skillDescription{
+
+    .skillDescription {
         font-size: 35px;
     }
 
     .div-video {
-        width: 100%;
+        width: 90%;
         height: 300px;
+        margin-left: 5%;
     }
 
 
@@ -368,50 +381,58 @@ i {
     }
 
     .projects {
-        width: 100%;
-        animation-duration: 1s;
+        width: 40%;
+        animation-duration: 3s;
     }
 
     .projects img {
-        width: 10%;
-        height: auto;    
+        width: 15%;
+        height: auto;
     }
 
     footer {
-        margin-top: 50px;
-        margin-left: 10px;
-        width: 95%;
+        width: 90%;
         height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .contact {
         width: 100%;
         font-size: 20px;
+        margin-left: 5%;
     }
 
     .redesSociales {
         width: 100%;
     }
 }
-/* 
-@media screen and (max-width:1024px) and (min-width:390px) {
+
+/* @media screen and (max-width:490px) and (min-width: 768px) { 
     header {
         width: 100%;
         height: auto;
-        background-color: #36C9C6;
+        background-color: #e7dfd8;
     }
 
     .menuNav {
+
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+
+
     }
 
     .home {
         width: 100%;
         margin: 0;
+        margin-top: 10px;
     }
 
     .home a {
@@ -424,23 +445,43 @@ i {
     }
 
     .listaMenu {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-        height: auto;
+        border: solid red;
+        position: fixed;
+        width: 90%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        line-height: 5px;
+        justify-content: center;
+        text-align: center;
+        background-color: #dad1c9;
+        top: 100px;
+        right: 100%;
+        transition: all .5s;
 
     }
+
+    .listaMenu a:target {
+        right: 100%;
+
+
+    }
+
+    .menuRes {
+        display: block;
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+
+
 
     main {
         width: 100%;
     }
 
     .seccion1 {
+        width: 90%;
+        margin-top: 20px;
         display: flex;
-        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -479,12 +520,20 @@ i {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        ima
+    }
+
+    .softSkills {
+        margin-top: 20px;
+    }
+
+    .skillDescription {
+        font-size: 35px;
     }
 
     .div-video {
-        width: 100%;
-        height: 200px;
+        width: 90%;
+        height: 300px;
+        margin-left: 5%;
     }
 
 
@@ -502,31 +551,32 @@ i {
     }
 
     .projects {
-
-        animation-duration: 1s;
+        width: 40%;
+        animation-duration: 3s;
     }
 
     .projects img {
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 15%;
+        height: auto;
     }
 
     footer {
-        margin-top: 50px;
-        margin-left: 10px;
-        margin-left: 10px;
-        width: 95%;
+        width: 90%;
         height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .contact {
         width: 100%;
         font-size: 20px;
+        margin-left: 5%;
     }
 
     .redesSociales {
         width: 100%;
     }
-} */
+}*/

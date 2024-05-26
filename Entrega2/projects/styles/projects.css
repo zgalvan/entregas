@@ -11,7 +11,7 @@
     --colorFondo: #F5F5F5;
     --colorEnfasis: #36C9C6;
     --colorCuadro1: #9BC1BC;
-    
+
 
     /* Fuentes */
     --textTitle: "Lato", sans-serif;
@@ -25,7 +25,7 @@
 
 body {
 
-    background-color: #F5F5F5;
+    background-color: #e7dfd8;
     width: 100vw;
     height: auto;
     overflow-x: hidden;
@@ -35,7 +35,6 @@ body {
 /*  -----------  HEADER  ----------- */
 
 header {
-    background-color: #36C9C6;
     width: 100vw;
     height: 15vh;
 }
@@ -46,8 +45,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .home {
@@ -62,15 +59,13 @@ header {
 
 }
 
-
-
 .listaMenu {
     display: flex;
     justify-content: flex-end;
     margin-right: 70px;
     gap: 50px;
     list-style: none;
-    color: whitesmoke;
+    color: #231f20;
     /* text-shadow: 1px 1px #3b3b3b; */
 }
 
@@ -82,7 +77,7 @@ header {
 }
 
 .listaMenu a:hover {
-    color: darkcyan;
+    color: rgb(148, 103, 18);
 }
 
 /* --------------  MAIN  --------------  */
@@ -93,73 +88,65 @@ main {
     font-size: 30px;
     text-align: center;
     margin: 5%;
-    }
+}
 
 /*Sección 1*/
 .principal {
-    background-color: #9BC1BC;
+    border: solid #231f20;
     width: 90%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    color: #231f20;
 
 }
-   
-.launchingDesc{
-    margin:10%;
-}
 
+.launchingDesc {
+    margin: 10%;
+}
 
 .launching {
-    border: solid   red;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
     animation-name: salto;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    
+    animation-direction: linear;
 }
 
 
 @keyframes salto {
-
-    /* transform: translateX(10px) rotate(10deg) translateY(5px); */
-    
-     from {
-        transform: perspective (100px) 
+    from {
+        transform: scale(0.7);
     }
-/*
+
     to {
-        transform: scale(100%);
 
-    } */
-}
+        transform: scale(1.3);
+    }
 
-.projects img {
-    width: 150px;
-    height: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 footer {
     margin-top: 70px;
-    background-color: #36C9C6;
-    width: 100%;
+    border: solid #231f20;
+    width: 90%;
     height: 7vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .contact {
     font-size: 30px;
     font-weight: lighter;
-    color: whitesmoke;
+    color: #231f20;
     align-items: center;
 }
 
@@ -168,7 +155,7 @@ footer {
 }
 
 i {
-    color: whitesmoke;
+    color: #231f20;
 }
 
 /* Responsive */
@@ -177,11 +164,12 @@ i {
     header {
         width: 100%;
         height: auto;
-        background-color: #36C9C6;
+        background-color: #e7dfd8;
     }
 
     .menuNav {
-        width: 100%;
+        width: 90%;
+        margin: 5%;
         height: auto;
         display: flex;
         justify-content: center;
@@ -207,245 +195,45 @@ i {
         margin-bottom: 30px;
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        line-height: 5px;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 20px;
+        place-content: center;
+        text-align: center;
+        
     }
 
     main {
         width: 100%;
     }
 
-    .seccion1 {
+    .principal {
+        border: solid #231f20;
+        width: 90%;
+        height: 100vh;
         display: flex;
-        width: 100%;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: #231f20;
     }
 
-    .titulos {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-
-    .titulo1 {
-        margin-top: 0px;
-        margin: 0px;
-    }
-
-    .titulo2 {
-        margin-top: 0px;
-        margin: 0px;
-    }
-
-    .mujerBa img {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        margin-left: 0px;
-    }
-
-    .seccion2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .softSkills{
-        margin-top: 20px;  
-    }
-    .skillDescription{
-        font-size: 35px;
-    }
-
-    .div-video {
-        width: 100%;
-        height: 300px;
-    }
-
-
-    .seccion3 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projectTitle {
-        width: 95%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .projects {
-        width: 100%;
-        animation-duration: 1s;
-    }
-
-    .projects img {
-        width: 10%;
-        height: auto;    
-    }
-
-    footer {
-        margin-top: 50px;
-        margin-left: 10px;
-        width: 95%;
-        height: auto;
+        footer {
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 5%;
+            margin-right: 5%;
     }
 
     .contact {
         width: 100%;
         font-size: 20px;
+        margin-left: 5%;
     }
 
     .redesSociales {
         width: 100%;
     }
 }
-/* 
-@media screen and (max-width:1024px) and (min-width:390px) {
-    header {
-        width: 100%;
-        height: auto;
-        background-color: #36C9C6;
-    }
-
-    .menuNav {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home {
-        width: 100%;
-        margin: 0;
-    }
-
-    .home a {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .listaMenu {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        line-height: 5px;
-
-    }
-
-    main {
-        width: 100%;
-    }
-
-    .seccion1 {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .titulos {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-
-    .titulo1 {
-        margin-top: 0px;
-        margin: 0px;
-    }
-
-    .titulo2 {
-        margin-top: 0px;
-        margin: 0px;
-    }
-
-    .mujerBa img {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        margin-left: 0px;
-    }
-
-    .seccion2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        ima
-    }
-
-    .div-video {
-        width: 100%;
-        height: 200px;
-    }
-
-
-    .seccion3 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projectTitle {
-        width: 95%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .projects {
-
-        animation-duration: 1s;
-    }
-
-    .projects img {
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    footer {
-        margin-top: 50px;
-        margin-left: 10px;
-        margin-left: 10px;
-        width: 95%;
-        height: auto;
-    }
-
-    .contact {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .redesSociales {
-        width: 100%;
-    }
-} */
