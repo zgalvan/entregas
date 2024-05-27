@@ -12,7 +12,7 @@
     <!-- Link a mis estilos -->
     <!-- 
         href: es donde especifico las rutas -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/aboutMe.css">
     <!-- Link de estilos de la página-->
     <link rel="shortcut icon" href="./assets/logo/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -29,19 +29,16 @@
         <nav class="menuNav">
             <!-- Lista -> Menú de navegación -->
             <div class="home">
-                <a href="./index.html"></a>
-                <i class="bi bi-house-door"></i>
+                <a href="../index.html"><i class="bi bi-house-door"></i></a>
+                
             </div>
 
-                  
-
             <ul class="listaMenu">
-
-                <ul><a href="#">ABOUT ME</a></ul>
-                <ul><a href="#">PROJECTS</a></ul>
-                <ul><a href="#">CV</a></ul>
-                <ul><a href="#">EDUCATION</a></li>
-                </ul>
+                <li><a href="./aboutMe.html">About me</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../cv/cv.html">CV</a></li>
+                <li><a href="../education/education.html">Education</a></li>
+            </ul>
 
         </nav>
     </header>
@@ -50,65 +47,24 @@
     <!-- Inicio del contenido de nuestra página -->
     <main>
         <section class="seccion1">
-            <div class="titulos">
-                <h1 class="titulo1">Zareth Galván</h1>
-                <h2 class="titulo2"> Business Analyst</h2>
+
+            <div class="businessAnalyst">
+                <img src="./assets/womanBA.jpg" alt="BA1">
             </div>
-            <div class="mujerBa">
-                <img src="./assets/womanBA.jpg" alt="MujerBA">
-            </div>
-        </section>
+            
+            <div class="aboutMe">
+                <h2 class="aboutMe1">About me</h2>
+                <p class="aboutMe2">
+                    Assessing an organization's structure, processes, technology, and capabilities to identify and
+                    define solutions to roadblocks that impede the achievement of organizational goals. </p>
+                <h2 class="aboutMe3">I can help you with:</h2>
+                <p class="aboutMe4"> Creating delightful experiences for your users
+                    Problem-solving and solution creation
+                    Requirement and change request analysis
+                    Client-facing communication </p>
 
-        <section class="seccion2">
-            <div class="div-video">
-
-                <iframe width="860" height="515" src="https://www.youtube.com/embed/IP3UIgQq73A?si=AFTcv97GOu7daKwP"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-            </div>
-
-            <div class="skills">
-                <h2 class="softSkills">What a BA does?</h2>
-                <p class="skillDescription">
-                Assessing an organization's structure, processes, technology, and capabilities to identify and define
-                    solutions to roadblocks that impede the achievement of organizational goals.
-                <!-- <ul> Problem-solving and solution creation</ul> 
-        <ul>Requirement and change request analysis</ul>
-        <ul>Client-facing communication</ul>-->
-                </p>
             </div>
         </section>
-
-        <section class="seccion3">
-            <h2 class="projectTitle">Some companies I have worked with</h2>
-            <article class="projects">
-                <img src="./assets/UKG.png" alt="imgProyecto">
-                <img src="./assets/Telefonica.png" alt="imgProyecto">
-                <img src="./assets/EPAM.png" alt="imgProyecto">
-                <img src="./assets/directv.png" alt="imgProyecto">
-                <img src="./assets/analitica.png" alt="imgProyecto">
-                <img src="./assets/CoreLogic_logo.png" alt="imgProyecto">
-                
-            </article>
-        </section>
-
-
-
-        <!-- <section class="seccion3"> 
-    <h2 class="education">EDUCATION</h2>
-    <div class="education1">
-        <img src="./assets/Santo_tomas-removebg-preview (1).png" alt="SantoTomas">
-        <div class="desc1"> <p>Electronic Engineer </p> </div>
-        <img src="./assets/UBA.png" alt="UBA">
-        <div class="desc2"> <p>Master in Energy</p> </div>
-        <img src="./assets/CESA-removebg-preview.png" alt="CESA">
-        <div class="desc3"> <p>Master in Digital Transformation</p> </div>
-   
-    </div>
-</section>-->
 
     </main>
 
@@ -121,9 +77,6 @@
         <i class="bi bi-linkedin"></i>
     </div>
     </div>
-
-    <p>Práctica de desarrollo creada por &copy; Zareth G - 2024</p>
-
 </footer>
 
 </html>

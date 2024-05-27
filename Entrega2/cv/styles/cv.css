@@ -1,0 +1,450 @@
+/*Importaciones - Fuentes */
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+</style>:root {
+    /* hace referencia a archivo html archivo raiz*/
+    /*Paleta de colores*/
+
+    /* --colorFondo: #e7dfd8; #36C9C6; */
+
+    --colorFondo: #e7dfd8;
+    --colorCuadro1: #000000;
+    --colorText: #231f20;
+
+
+    /* Fuentes */
+    --textTitle: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #e7dfd8;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/*  -----------  HEADER  ----------- */
+
+header {
+    background-color: #e7dfd8;
+    width: 100vw;
+    height: 15vh;
+}
+
+.menuNav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+
+    margin-left: 100px;
+    font-size: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* text-shadow: 1px 1px #3b3b3b; */
+
+}
+
+
+
+.listaMenu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    gap: 50px;
+    list-style: none;
+    color: #231f20;
+    /* text-shadow: 1px 1px #3b3b3b; */
+}
+
+.listaMenu a {
+    text-decoration: none;
+    color: var(--colorTexto);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.listaMenu a:hover {
+    color: rgb(148, 103, 18);
+    transform: .5s;
+}
+
+
+/* --------------  MAIN  --------------  */
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7dfd8;
+    margin: 0;
+}
+
+/*Sección 1*/
+.seccion1 {
+    margin: 0;
+    border: solid transparent;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+    width: 90%;
+    height: auto;
+}
+
+
+.titulo1 {
+    width: 50%;
+    margin: 0%;
+    margin-left: 5%;
+    font-size: 50px;
+    text-align: left;
+}
+
+.titulo2 {
+    width: 50%;
+    margin-left: 5%;
+    font-size: 30px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+
+.seccion2 {
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.profExperience {
+    width: 100%;
+    height: 100vh;
+    grid-column: 1;
+}
+
+.profExp {
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.profName {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+.profComp {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.description {
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-right: 5%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.profName1 {
+    margin-top: 7%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+.profComp1 {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.description1 {
+    margin-top: 3%;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-right: 5%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contact1 {
+
+    border-top: transparent;
+    background-color: rgb(204, 192, 174);
+    width: 100%;
+    height: 100vh;
+    grid-column: 2;
+    place-content: left;
+}
+
+.personalInfo {
+    margin: 10%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.perInfo {
+    margin: 10%;
+    font-size: 20px;
+    list-style: none;
+    line-height: 10px;
+}
+
+.software {
+    margin: 10%;
+    margin-top: 15%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.software1 {
+    margin: 10%;
+    font-size: 20px;
+    list-style: none;
+    line-height: 10px;
+}
+
+
+
+footer {
+    margin-top: 70px;
+    border: solid #231f20;
+    background-color: #e7dfd8;
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #231f20;
+    align-items: center;
+}
+
+.redesSociales {
+    font-size: 30px;
+}
+
+i {
+    color: #231f20;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1024px) and (min-width:390px) {
+
+    header {
+        width: 90%;
+        height: 100%;
+        background-color: #e7dfd8;
+    }
+
+    .menuNav {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-content: center;
+       }
+
+    .listaMenu {
+
+        width: 90%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 70%;
+        text-align: center;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+     }
+
+    .listaMenu a {
+        width: 100%;
+        height: 100%;
+        margin-top: 40%;
+        font-size: 18px;
+      
+    }
+
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .seccion1 {
+        margin: 0;
+        border: solid transparent;
+        border-bottom-color: black;
+        border-bottom-width: 5px;
+        width: 90%;
+        height: 100%;
+    }
+
+    .titulo1 {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .titulo2 {
+        width: 100%;
+        margin-left: 5%;
+        font-size: 30px;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .seccion2 {
+        width: 90%;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .profExperience {
+        width: 100%;
+        height: 100%;
+        grid-column: 1;
+    }
+
+    .profExp {
+        margin-top: 4%;
+        margin-left: 10%;
+        font-size: 25px;
+    }
+
+    .profName {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .profComp {
+        margin-top: 2%;
+        margin-left: 10%;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .description {
+        margin-top: 4%;
+        margin-left: 10%;
+        font-size: 15px;
+        margin-right: 5%;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .profName1 {
+        margin-top: 7%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .profComp1 {
+        margin-top: 2%;
+        margin-left: 10%;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .description1 {
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 15px;
+        margin-right: 5%;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .contact1 {
+
+        border-top: transparent;
+        background-color: rgb(204, 192, 174);
+        width: 100%;
+        height: 100%;
+        grid-column: 2;
+        place-content: left;
+    }
+
+    .personalInfo {
+        margin: 10%;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .perInfo {
+        margin: 10%;
+        font-size: 18px;
+        list-style: none;
+        line-height: 15px;
+    }
+
+    .software {
+        margin: 10%;
+        margin-top: 15%;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .software1 {
+        margin: 10%;
+        font-size: 18px;
+        list-style: none;
+        line-height: 15px;
+    }
+
+    footer {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .contact {
+        width: 100%;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .redesSociales {
+        width: 100%;
+    }
+}
